@@ -4,27 +4,249 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="name" content="York Ruby">
+    <meta name="description" content="York Ruby is a user group for those interested in the Ruby programming language in York and surrounding areas! Anyone is welcome whether you're just starting out, a seasoned Ruby programmer, or just curious.">
 
     <title>York Ruby</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 
     <script defer data-domain="yorkruby.org" src="https://plausible.io/js/plausible.js"></script>
 
     <style>
     body {
-      font-family: monospace;
+      padding: 6px;
+      margin-top: 30px;
+    }
+
+    body {
+      font-family: "JetBrains Mono", monospace;
+      font-style: normal;
+      font-size: 1.1em;
+      font-optical-sizing: auto;
+      line-height: 1.6;
+    }
+
+    h1 {
+      margin: 0;
+      text-transform: uppercase;
+      color: #cc0000;
+      text-align: center;
+      font-size: 2.6em;
+      color: #cc0000;
+      text-shadow: 1px 1px 1px #860000;
+    }
+
+    h1 svg {
+      width: 20px;
+      fill: currentColor;
+      color: #cc0000;
+      margin: 0 -20px;
+    }
+
+    h2 {
+      text-transform: uppercase;
+      font-size: 1.1em;
     }
 
     a {
-      color: #000;
+      color: #cc0000;
+      transition: background-color 0.2s ease;
+    }
+
+    a:hover {
+      background-color: #cc0000;
+      color: #fff;
+    }
+
+    .wrapper {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .wrapper > p {
+      text-align: justify;
+    }
+
+    footer {
+      font-size: 0.8em;
+      margin-top: -1em;
+    }
+
+    footer a {
+      color: #999;
+    }
+
+    footer a:hover {
+      color: #666;
+      background-color: transparent;
+    }
+
+    footer p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+    }
+
+    footer p svg {
+      width: 16px;
+      fill: currentColor;
+      color: #666;
+    }
+
+    .separator {
+      position: relative;
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+
+    .separator hr {
+      border: none;
+      border-top: 1px solid #eee;
+    }
+
+    .separator svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      background-color: white;
+      margin: 0 auto;
+      width: 16px;
+      padding: 4px;
+      fill: currentColor;
+      color: #eee;
+    }
+
+    @media only screen and (min-width: 767px) {
+      .wrapper {
+        width: 600px;
+      }
+    }
+
+    .event {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+
+    .event .date {
+      flex-basis: 100%;
+      margin-right: 10px;
+    }
+
+    .event .description {
+      flex-basis: 100%;
+    }
+
+    @media (min-width: 768px) {
+      .event {
+        flex-wrap: nowrap;
+      }
+
+      .event .date {
+        flex-basis: auto;
+      }
+
+      .event .date::after {
+        content: " — ";
+      }
+
+      .event .description {
+        flex-basis: auto;
+      }
     }
     </style>
   </head>
-
   <body>
+    <div class="wrapper">
+      <h1>
+        <span>York</span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M168.5 72L256 165l87.5-93-175 0zM383.9 99.1L311.5 176l129 0L383.9 99.1zm50 124.9L256 224 78.1 224 256 420.3 433.9 224zM71.5 176l129 0L128.1 99.1 71.5 176zm434.3 40.1l-232 256c-4.5 5-11 7.9-17.8 7.9s-13.2-2.9-17.8-7.9l-232-256c-7.7-8.5-8.3-21.2-1.5-30.4l112-152c4.5-6.1 11.7-9.8 19.3-9.8l240 0c7.6 0 14.8 3.6 19.3 9.8l112 152c6.8 9.2 6.1 21.9-1.5 30.4z"/></svg>
+        <span>Ruby</span>
+      </h1>
 
-    <p>yorkruby.org</p>
+      <p>
+        York Ruby is a user group for those interested in the
+        <a href="https://www.ruby-lang.org/en/">Ruby programming language</a> in
+        York and surrounding areas! Anyone is welcome whether you're just
+        starting out, a seasoned Ruby programmer, or just curious.
+      </p>
 
-    <p><a href="mailto:hello@yorkruby.org">hello@yorkruby.org</a></p>
+      <div class="separator">
+        <hr>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M168.5 72L256 165l87.5-93-175 0zM383.9 99.1L311.5 176l129 0L383.9 99.1zm50 124.9L256 224 78.1 224 256 420.3 433.9 224zM71.5 176l129 0L128.1 99.1 71.5 176zm434.3 40.1l-232 256c-4.5 5-11 7.9-17.8 7.9s-13.2-2.9-17.8-7.9l-232-256c-7.7-8.5-8.3-21.2-1.5-30.4l112-152c4.5-6.1 11.7-9.8 19.3-9.8l240 0c7.6 0 14.8 3.6 19.3 9.8l112 152c6.8 9.2 6.1 21.9-1.5 30.4z"/></svg>
+      </div>
 
+      <p>
+        We meet on the <strong>third Tuesday of each month</strong>.
+      </p>
+
+      <p>
+        Upcoming events
+      </p>
+
+      <ul>
+        <li>
+          <div class="event">
+            <time class="date">17th September 2024</time>
+            <span class="description">The Hop <a href="https://maps.app.goo.gl/f3jxB4to9B6LGADK9">[map]</a></span>
+          </div>
+        </li>
+        <li>
+          <div class="event">
+            <time class="date">15th October 2024</time>
+            <span class="description">Location TBD</span>
+          </div>
+        </li>
+        <li>
+          <div class="event">
+            <time class="date">19th November 2024</time>
+            <span class="description">Location TBD</span>
+          </div>
+        </li>
+        <li>
+          <div class="event">
+            <time class="date">17th December 2024</time>
+            <span class="description">Location TBD</span>
+          </div>
+        </li>
+      </ul>
+
+      <p>
+        Our meetups will soon be listed on the <a href="https://www.meetup.com/yorkdevelopers/">York Developers meetup page</a> where you will be able to RSVP.
+      </p>
+
+      <div class="separator">
+        <hr>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M168.5 72L256 165l87.5-93-175 0zM383.9 99.1L311.5 176l129 0L383.9 99.1zm50 124.9L256 224 78.1 224 256 420.3 433.9 224zM71.5 176l129 0L128.1 99.1 71.5 176zm434.3 40.1l-232 256c-4.5 5-11 7.9-17.8 7.9s-13.2-2.9-17.8-7.9l-232-256c-7.7-8.5-8.3-21.2-1.5-30.4l112-152c4.5-6.1 11.7-9.8 19.3-9.8l240 0c7.6 0 14.8 3.6 19.3 9.8l112 152c6.8 9.2 6.1 21.9-1.5 30.4z"/></svg>
+      </div>
+
+      <p>
+        Join us on the <a href="https://www.yorkdevelopers.org/">York
+        Developers</a> Slack in the <code>#group-ruby-york</code> channel.
+        Email us to be added.
+      </p>
+
+      <p>Find us on Mastodon at <a href="https://ruby.social/@yorkruby">@yorkruby@ruby.social</a></p>
+
+      <p>Email us at <a href="mailto:hello@yorkruby.org">hello@yorkruby.org</a></p>
+
+      <div class="separator">
+        <hr>
+      </div>
+
+      <footer>
+        <p>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+          <a href="https://github.com/yorkruby/website">
+            github.com/yorkruby/website
+          </a>
+        </p>
+      </footer>
+    </div>
   </body>
 </html>
