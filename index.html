@@ -130,18 +130,26 @@
     }
 
     .event {
+      margin-bottom: 10px;
+    }
+
+    .event .meta {
       display: flex;
       flex-wrap: wrap;
-      margin-bottom: 10px;
     }
 
     .event .date {
       flex-basis: 100%;
       margin-right: 10px;
+      font-weight: bold;
+    }
+
+    .event .location {
+      flex-basis: 100%;
     }
 
     .event .description {
-      flex-basis: 100%;
+      xbackground: red;
     }
 
     @media (min-width: 768px) {
@@ -157,7 +165,7 @@
         content: " — ";
       }
 
-      .event .description {
+      .event .location {
         flex-basis: auto;
       }
     }
@@ -194,23 +202,30 @@
       <ul>
         <li>
           <div class="event">
-            <time class="date">18th February 2025</time>
+            <div class="meta">
+              <time class="date">18th March 2025</time>
+              <span class="location">
+                Location TBD
+                <a href="https://www.meetup.com/yorkdevelopers/events/306457885/">[RSVP]</a>
+              </span>
+            </div>
             <span class="description">
-              The Hop <a href="https://maps.app.goo.gl/f3jxB4to9B6LGADK9">[map]</a>
-              <a href="https://www.meetup.com/yorkdevelopers/events/305779166/">[RSVP]</a>
+              This month we have a talk by Andy Callaghan about how he writes
+              Ruby with real-world examples of code from his studio booking
+              platform startup, <a href="https://jammed.app">Jammed</a>.
             </span>
           </div>
         </li>
         <li>
           <div class="event">
-            <time class="date">18th March 2025</time>
-            <span class="description">Location TBD</span>
+            <time class="date">15th April 2025</time>
+            <span class="location">Location TBD</span>
           </div>
         </li>
         <li>
           <div class="event">
-            <time class="date">15th April 2025</time>
-            <span class="description">Location TBD</span>
+            <time class="date">20th May 2025</time>
+            <span class="location">Location TBD</span>
           </div>
         </li>
       </ul>
